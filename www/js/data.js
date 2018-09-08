@@ -12,12 +12,19 @@ function searchB() {
         url: url ,
         type: 'GET'
     }).then(function (data) {
+        console.log(data);
+        
         for (var i = 0; i < data.length; i++) {
             for (var j = 0; j < data.length; j++) {
-        var row = data[i][j];
+                // for (var k = 0; k < data.length; k++) {
+  
+        var row = data[i][j].search-results+data[i][j].link
+        ;
         console.log(row);
-            }
+        $('#show').append(row);
+            // }
         }
+    }
       
     });
 
