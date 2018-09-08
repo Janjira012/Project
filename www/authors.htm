@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
 
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
     <title>Authors</title>
 
 </head>
@@ -86,18 +89,17 @@
                     <br>
 
                     <div class="container">
-                        <form id="searchForm" class="form-horizontal" action="" method="POST" role="form">
                             <div class="form-group">
                                 <label for="search" class="col-md-1 control-label">Search</label>
                                 <br>
-                                <form id="authorsForm" class="form-horizontal" action="" method="POST" role="form">
+                                <!-- <form id="authorsForm" class="form-horizontal" action="" method="POST" role="form"> -->
                                     <div class="col-md-3">
 
                                         <input type="text" class="form-control" id="searchAuthorsName" name="searchAuthorsName" placeholder="Authors name" maxlength="25"
                                             autofocus>
                                         <br>
 
-                                        <input type="checkbox" name="vehicle3" value="Boat" checked>Affiliation: College of Computing
+                                        <input type="checkbox" name="vehicle3" id="affiliation" value="College of Computing" checked>Affiliation: College of Computing
                                     </div>
                                     <div class="col-md-3">
                                         <input type="text" class="form-control" id="searchAuthorLastsname" name="searchAuthorsLastname" placeholder="Authors lastname"
@@ -105,21 +107,22 @@
                                     </div>
 
 
-                                </form>
+                                <!-- </form> -->
                             </div>
 
                     </div>
 
                     <div class="form-group">
                         <div class="col-md-2 col-md-offset-12">
-                            <a href="result.htm">
-                            <button class="btn btn-info" type="submit"  id="searchB">
+                            <!-- <a href="result.htm"> -->
+                            <button class="btn btn-info" type="submit" onclick="searchB()" id="searchB">
                                 <span class="glyphicon glyphicon-search"></span> Search</button>
-                            </a>
+                            <!-- </a> -->
                             <br>
                             <br>
                         </div>
                     </div>
+                    <div  class="container" id="show"></div>
                   
                 </div>
 
@@ -190,12 +193,8 @@
     <br>
 
     </div>
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/cache.js"></script>
-    <script type="text/javascript" src="js/loader.js"></script>
-    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="js/singins.js"></script>
-    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.cookie.js"></script> -->
     <script src="js/data.js"></script>
 </body>
