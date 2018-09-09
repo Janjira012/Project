@@ -12,20 +12,21 @@ function searchB() {
         url: url ,
         type: 'GET'
     }).then(function (data) {
-        console.log(data);
+       //console.log(data);
+        
         
         for (var i = 0; i < data.length; i++) {
-            for (var j = 0; j < data.length; j++) {
+            // for (var j = 0; j < data.length; j++) {
                 // for (var k = 0; k < data.length; k++) {
-  
-        var row = data[i][j].search-results+data[i][j].link
-        ;
-        console.log(row);
-        $('#show').append(row);
+            
+        var row = data.search-result.entry[0].eid;
+
+       console.log(data[0]);
+        //$('#show').append(row);
             // }
-        }
+        // }
     }
-      
+    
     });
 
     
