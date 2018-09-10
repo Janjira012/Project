@@ -14,22 +14,24 @@ function searchB() {
         dataType :  'json',
         //success : onSuccess,
        //error : onError
-        
-    }).then(function (data) {
-      // console.log(url);
-       //console.log(data);
+       success : function (data) {
+           var x = data
+          //console.log(data.search-results);
+          console.log(x['search-results'].entry.preferred-name);
+
+          //window.location.href = "reult.htm?id=" ;
+       }
+    })  
+    // }).then(function (data) {
+    //     var x = data;
+    //    console.log(x.search-results);
+}  
 
         
         
-        var row = data.search-results.entry.eid;
-       console.log(row);
+    //     var row = data.search-results.entry[0].eid;
+    //    console.log(row);
        
     
    
-
-    
-    });
-
-    
-}
 
