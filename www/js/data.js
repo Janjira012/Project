@@ -17,7 +17,7 @@ function searchB() {
        success : function (data) {
            var x = data
           //console.log(data.search-results);
-          console.log(x['search-results'].entry.preferred-name);
+          console.log(x['search-results'].entry[0]['preferred-name']);
 
           //window.location.href = "reult.htm?id=" ;
        }
